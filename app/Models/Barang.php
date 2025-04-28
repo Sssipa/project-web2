@@ -18,6 +18,6 @@ class Barang extends Model
     }
     public function pembelians()
     {
-        return $this->hasMany(Pembelian::class, 'barang_id');
+        return $this->hasOne(Pembelian::class, 'barang_id');
     }
 }

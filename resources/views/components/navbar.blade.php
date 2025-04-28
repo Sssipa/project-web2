@@ -10,7 +10,7 @@
                 <div class="hidden md:block">
                     @auth
                             <div class="ml-10 flex items-baseline space-x-4">
-                                <a href="{{ route('dashboard') }}" class=" {{ request()->is('/dashboard') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'}}  no-underline rounded-md  px-3 py-2 text-sm font-medium ">
+                                <a href="{{ route('dashboard') }}" class=" {{ request()->is('dashboard') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'}}  no-underline rounded-md  px-3 py-2 text-sm font-medium ">
                                     {{ __('Dashboard') }}
                                 </a>
                                 <a href="{{ route('barangs.index') }}" class=" {{ request()->is('barangs') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'}} no-underline rounded-md px-3 py-2 text-sm font-medium ">
